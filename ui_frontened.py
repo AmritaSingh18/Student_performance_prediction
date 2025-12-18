@@ -23,3 +23,5 @@ features = np.array([[gender, age, study_time, failures, absences]])
 if st.button("Predict"):
     prediction = model.predict(features)[0]
     st.success("✅ Passed!" if prediction else "❌ Failed")
+if __name__ == "__main__":
+    main() #prevents execution during pytest 
