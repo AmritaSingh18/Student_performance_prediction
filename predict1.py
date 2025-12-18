@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 # Load data
-df = pd.read_csv('C:/Users/amrit/Desktop/prediction/student/student-mat.csv', delimiter=';')
+df = pd.read_csv('https://github.com/AmritaSingh18/Student_performance_prediction/blob/main/student.zip', delimiter=';')
 X = df.drop('G3', axis=1)
 y = df['G3'] >= 10  # Binary classification: Pass if G3 >= 10
 
